@@ -1,5 +1,9 @@
-// import $ from 'jquery';
+
 import 'bootstrap';
+import '../components/Navbar/navbar.scss';
+
+import createNavbar from '../components/Navbar/navbar';
+
 import './index.scss';
 
-console.log('hello world');
+createNavbar();
