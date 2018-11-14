@@ -17,5 +17,4 @@ const loginButton = () => {
     firebase.auth().signInWithPopup(provider);
   });
 };
-
 export default loginButton;
