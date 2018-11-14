@@ -8,10 +8,12 @@ import createNavbar from '../components/Navbar/navbar';
 import loginButton from '../components/Auth/auth';
 
 import './index.scss';
+import checkLoginStatus from './helpers/authHelpers';
 
 const initializeApp = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
   createNavbar();
+  checkLoginStatus();
   loginButton();
 };
 
