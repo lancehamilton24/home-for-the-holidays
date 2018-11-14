@@ -11,8 +11,18 @@ const navbarEvents = () => {
       }).catch((err) => {
         console.error('you still logged in', err);
       });
+    } else if (e.target.id === 'navbar-button-holidays') {
+      $('#auth').hide();
+      $('#friends').hide();
+      $('#holidays').show();
+    } else if (e.target.id === 'navbar-button-friends') {
+      $('#auth').hide();
+      $('#friends').show();
+      $('#holidays').hide();
     } else {
-      console.log(e.target.id);
+      $('#auth').show();
+      $('#friends').hide();
+      $('#holidays').hide();
     }
   });
 };
@@ -31,10 +41,10 @@ const createNavbar = () => {
       <li>
       </li>
       <li>
-        <a id="navbar-button" class="nav-link" href="#">Holidays</a>
+        <a id="navbar-button-holidays" class="nav-link" href="#">Holidays</a>
       </li>
       <li>
-        <a id="navbar-button" class="nav-link" href="#">Friends</a>
+        <a id="navbar-button-friends" class="nav-link" href="#">Friends</a>
       </li>
       <li>
         <a id="navbar-button" class="nav-link" href="#">Logout</a>
