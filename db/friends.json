@@ -1,0 +1,49 @@
+{
+  "friend": [
+    {
+      "name": "Lance H.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "0009878987",
+      "email": "lance@yomamma.com",
+      "relationship": "twin brother",
+      "isAvoiding": true,
+      "uid": "1234"
+    },
+    {
+      "name": "Bob B.",
+      "address": "1 Train Street, Nashville, TN 37209",
+      "phoneNumber": "0004756354",
+      "email": "bob@yomamma.com",
+      "relationship": "uncle by marriage",
+      "isAvoiding": true,
+      "uid": "1235"
+    },
+    {
+      "name": "Eddie C.",
+      "address": "1 Crane Street, Nashville, TN 37209",
+      "phoneNumber": "0002223333",
+      "email": "eddie@yomamma.com",
+      "relationship": "brotha from anotha mother",
+      "isAvoiding": true,
+      "uid": "1236"
+    },
+    {
+      "name": "Shirley M.",
+      "address": "1 Brain Street, Nashville, TN 37209",
+      "phoneNumber": "1112223000",
+      "email": "shirley@yomamma.com",
+      "relationship": "sister from anotha mother",
+      "isAvoiding": true,
+      "uid": "1237"
+    },
+    {
+      "name": "Wesley M.",
+      "address": "1 Lame Street, Nashville, TN 37209",
+      "phoneNumber": "1100003333",
+      "email": "wesley@yomamma.com",
+      "relationship": "cousin from anotha mother",
+      "isAvoiding": true,
+      "uid": "1238"
+    }
+  ]
+}
