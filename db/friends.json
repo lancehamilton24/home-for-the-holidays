@@ -1,5 +1,5 @@
 {
-  "friend": [
+  "friends": [
     {
       "name": "Lance H.",
       "address": "1 Main Street, Nashville, TN 37209",
@@ -44,6 +44,46 @@
       "relationship": "cousin from anotha mother",
       "isAvoiding": true,
       "uid": "1238"
+    }
+  ],
+  "holidayFriend": [
+    {
+      "holidayId": "holiday1",
+      "friendId": "friend1"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend2"
+    },
+    {
+      "holidayId": "holiday3",
+      "friendId": "friend3"
+    }
+  ],
+  "holidays": [
+    {
+      "name": "Thanksgiving",
+      "Date": "11/22/2018",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "NSS",
+      "startTime": "11am",
+      "uid": "12345"
+    },
+    {
+      "name": "Hannukah",
+      "Date": "11/25/2018",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "NSS",
+      "startTime": "10am",
+      "uid": "12346"
+    },
+    {
+      "name": "Christmas",
+      "Date": "11/26/2018",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "NSS",
+      "startTime": "8am",
+      "uid": "12347"
     }
   ]
 }
