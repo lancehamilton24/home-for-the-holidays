@@ -1,6 +1,21 @@
 import axios from 'axios';
-import apiKeys from '../../../db/apiKeys.json';
-import authHelpers from '../../helpers/authHelpers';
+import $ from 'jquery';
+import apiKeys from '../../db/apiKeys.json';
+import authHelpers from '../../src/helpers/authHelpers';
+
+
+const buildDropdown = (friendsArray) => {
+  let dropdown = `<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">`;
+  friendsArray.forEach((friend) => {
+    dropdown += `<a class="dropdown-item" href="#">${friend.name}</div>`;
+  });
+  dropdown += '<div></div>';
+  $('#dropdown-container').html(dropdown);
+};
 
 const friendsPage = () => {
   const uid = authHelpers.getCurrentUid();
@@ -9,16 +24,17 @@ const friendsPage = () => {
       const friendsObject = results.data;
       const friendsArray = [];
       if (friendsObject !== null) {
-        Object.keys(friendsObjects).forEach((friendId) => {
+        Object.keys(friendsObject).forEach((friendId) => {
           friendsObject[friendId].id = friendId;
           friendsArray.push(friendsObject[friendId]);
         });
       }
-      console.log(friendsArray);
+      buildDropdown(friendsArray);
     })
     .catch((error) => {
       console.error('error in getting friends', error);
     });
 };
+
 
 export default friendsPage;
