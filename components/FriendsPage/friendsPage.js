@@ -11,6 +11,7 @@ const printSingleFriend = (friend) => {
     <p>${friend.email}</p>
     <p>${friend.phoneNumber}</p>
     <button class="btn btn-danger delete-btn" data-delete-id=${friend.id}>X</button>
+    <button class="btn btn-info edit-btn" data-edit-id=${friend.id}>Edit</button>
   </div>
   `;
   $('#single-container').html(friendString);
@@ -48,8 +49,7 @@ const buildDropdown = (friendsArray) => {
 const friendsPage = () => {
   const uid = authHelpers.getCurrentUid();
   friendsData.getAllFriends(uid)
-    .then((results) => {
-      const friendsObject = results.data;
+    .then((friendsArray) => {
       buildDropdown(friendsArray);
     })
     .catch((error) => {

@@ -4,32 +4,32 @@ import friendsData from '../../src/helpers/data/friendsData';
 import initializeFriendsPage from '../FriendsPage/friendsPage';
 
 const formBuilder = () => {
-  const form = 
-  `<div class="form-group">
+  const form = `
+  <div class="form-group">
     <label for="form-friend-name">Name:</label>
     <input type="text" class="form-control" id="form-friend-name" placeholder="John Smith">
   </div>
   <div class="form-group">
     <label for="form-friend-address">Address:</label>
-    <input type="text" class="form-control" id="form-friend-address" placeholder="500 Interstate Blvd">
+    <input type="text" class="form-control" id="form-friend-address" placeholder="500 Interstate Blvd S">
   </div>
   <div class="form-group">
     <label for="form-friend-email">Email:</label>
-    <input type="text" class="form-control" id="form-friend-email" placeholder="Jsmith@gmail.com">
+    <input type="email" class="form-control" id="form-friend-email" placeholder="fake@person.com">
   </div>
   <div class="form-group">
-    <label for="form-friend-phone">Phone number:</label>
-    <input type="text" class="form-control" id="form-friend-phone" placeholder="809-989-9890">
+    <label for="form-friend-phone">Phone Number:</label>
+    <input type="text" class="form-control" id="form-friend-phone" placeholder="555-867-5309">
   </div>
   <div class="form-group">
     <label for="form-friend-relationship">Relationship:</label>
-    <input type="text" class="form-control" id="form-friend-relationship" placeholder="I don't know you">
+    <input type="text" class="form-control" id="form-friend-relationship" placeholder="I don't know, it's weird.">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>`;
+  `;
   return form;
 };
 
-const getFormValues = () => {
+const gettingFriendFromForm = () => {
   const friend = {
     name: $('#form-friend-name').val(),
     address: $('#form-friend-address').val(),
