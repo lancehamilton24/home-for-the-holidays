@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'bootstrap';
-
+import $ from 'jquery';
+import showAddForm from '../components/AddEditFriends/addEditFriends';
 
 import apiKeys from '../db/apiKeys.json';
 
@@ -16,6 +17,7 @@ const initializeApp = () => {
   createNavbar();
   authHelpers.checkLoginStatus(friendsPage);
   loginButton();
+  $('#show-friend-form').on('click', showAddForm);
 };
 
 initializeApp();
