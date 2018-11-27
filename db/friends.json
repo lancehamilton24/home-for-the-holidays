@@ -1,89 +1,47 @@
 {
-  "friends": [
-    {
-      "name": "Lance H.",
-      "address": "1 Main Street, Nashville, TN 37209",
-      "phoneNumber": "0009878987",
-      "email": "lance@yomamma.com",
-      "relationship": "twin brother",
-      "isAvoiding": true,
-      "uid": "1234"
-    },
-    {
-      "name": "Bob B.",
-      "address": "1 Train Street, Nashville, TN 37209",
-      "phoneNumber": "0004756354",
-      "email": "bob@yomamma.com",
-      "relationship": "uncle by marriage",
-      "isAvoiding": true,
-      "uid": "1235"
-    },
-    {
-      "name": "Eddie C.",
-      "address": "1 Crane Street, Nashville, TN 37209",
-      "phoneNumber": "0002223333",
-      "email": "eddie@yomamma.com",
-      "relationship": "brotha from anotha mother",
-      "isAvoiding": true,
-      "uid": "1236"
-    },
-    {
-      "name": "Shirley M.",
-      "address": "1 Brain Street, Nashville, TN 37209",
-      "phoneNumber": "1112223000",
-      "email": "shirley@yomamma.com",
-      "relationship": "sister from anotha mother",
-      "isAvoiding": true,
-      "uid": "1237"
-    },
-    {
-      "name": "Wesley M.",
-      "address": "1 Lame Street, Nashville, TN 37209",
-      "phoneNumber": "1100003333",
-      "email": "wesley@yomamma.com",
-      "relationship": "cousin from anotha mother",
-      "isAvoiding": true,
-      "uid": "1238"
-    }
-  ],
-  "holidayFriend": [
-    {
-      "holidayId": "holiday1",
-      "friendId": "friend1"
-    },
-    {
-      "holidayId": "holiday2",
-      "friendId": "friend2"
-    },
-    {
-      "holidayId": "holiday3",
-      "friendId": "friend3"
-    }
-  ],
-  "holidays": [
-    {
-      "name": "Thanksgiving",
-      "Date": "11/22/2018",
-      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
-      "location": "NSS",
-      "startTime": "11am",
-      "uid": "12345"
-    },
-    {
-      "name": "Hannukah",
-      "Date": "11/25/2018",
-      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
-      "location": "NSS",
-      "startTime": "10am",
-      "uid": "12346"
-    },
-    {
-      "name": "Christmas",
-      "Date": "11/26/2018",
-      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
-      "location": "NSS",
-      "startTime": "8am",
-      "uid": "12347"
-    }
-  ]
+	"friend1": {
+		"name": "Callan M.",
+		"address": "1 Main Street, Nashville, TN 37209",
+		"phoneNumber": "1111111111",
+		"email": "callan@yomamma.com",
+		"relationship": "sister from anotha mother",
+		"isAvoiding": true,
+		"uid": "lk5OwzAa1ufJPwuJg80oXcHn3Bb2"
+	},
+	"friend2": {
+		"name": "Lauren R.",
+		"address": "2 Main Street, Nashville, TN 37209",
+		"phoneNumber": "2222222222",
+		"email": "lauren@yomamma.com",
+		"relationship": "work wife",
+		"isAvoiding": false,
+		"uid": "lk5OwzAa1ufJPwuJg80oXcHn3Bb2"
+	},
+	"friend3": {
+		"name": "Santa Claws",
+		"address": "3 Main Street, Nashville, TN 37209",
+		"phoneNumber": "3333333333",
+		"email": "santa@yomamma.com",
+		"relationship": "Nope, nope, nope",
+		"isAvoiding": true,
+		"uid": "lk5OwzAa1ufJPwuJg80oXcHn3Bb2"
+	},
+	"friend4": {
+		"name": "Other Adam",
+		"address": "4 Main Street, Nashville, TN 37209",
+		"phoneNumber": "4444444444",
+		"email": "other@yomamma.com",
+		"relationship": "2nd best adam",
+		"isAvoiding": false,
+		"uid": "12345"
+	},
+	"friend5": {
+		"name": "Holiday Armidillo",
+		"address": "5 Main Street, Nashville, TN 37209",
+		"phoneNumber": "5555555555",
+		"email": "armidillo@yomamma.com",
+		"relationship": "Bringing joy to all the children",
+		"isAvoiding": false,
+		"uid": "67890"
+	}
 }
