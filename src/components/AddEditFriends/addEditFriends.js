@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import authHelpers from '../../src/helpers/authHelpers';
-import friendsData from '../../src/helpers/data/friendsData';
+import authHelpers from '../../helpers/authHelpers';
+import friendsData from '../../helpers/data/friendsData';
 import initializeFriendsPage from '../FriendsPage/friendsPage';
 
 const formBuilder = (friend) => {
