@@ -10,5 +10,13 @@
   "holidayFriend3": {
     "holidayId": "holiday3",
     "friendId": "friend3"
+  },
+  "holidayFriend4": {
+    "holidayId": "holiday3",
+    "friendId": "friend3"
+  },
+  "holidayFriend5": {
+    "holidayId": "holiday2",
+    "friendId": "friend3"
   }
 }

@@ -1,19 +1,19 @@
 {
 	"friend1": {
-		"name": "Callan M.",
+		"name": "Bat Mane",
 		"address": "1 Main Street, Nashville, TN 37209",
 		"phoneNumber": "1111111111",
-		"email": "callan@yomamma.com",
-		"relationship": "sister from anotha mother",
+		"email": "mane.bat1@yomamma.com",
+		"relationship": "friend that's more like a brother",
 		"isAvoiding": true,
 		"uid": "lk5OwzAa1ufJPwuJg80oXcHn3Bb2"
 	},
 	"friend2": {
-		"name": "Lauren R.",
+		"name": "Lance H.",
 		"address": "2 Main Street, Nashville, TN 37209",
 		"phoneNumber": "2222222222",
-		"email": "lauren@yomamma.com",
-		"relationship": "work wife",
+		"email": "twin@yomamma.com",
+		"relationship": "Twin",
 		"isAvoiding": false,
 		"uid": "lk5OwzAa1ufJPwuJg80oXcHn3Bb2"
 	},

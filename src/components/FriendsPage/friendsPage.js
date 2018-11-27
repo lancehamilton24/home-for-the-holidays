@@ -1,8 +1,9 @@
 import $ from 'jquery';
-import authHelpers from '../../src/helpers/authHelpers';
-import friendsData from '../../src/helpers/data/friendsData';
-import holidayFriendsData from '../../src/helpers/data/holidayFriendsData';
-import holidaysData from '../../src/helpers/data/holidaysData';
+// import { auth } from 'firebase';
+import authHelpers from '../../helpers/authHelpers';
+import friendsData from '../../helpers/data/friendsData';
+import holidayFriendsData from '../../helpers/data/holidayFriendsData';
+import holidaysData from '../../helpers/data/holidaysData';
 
 const holidayStringBuilder = (holidays) => {
   let holidayString = '<h3>Holidays:</h3>';
