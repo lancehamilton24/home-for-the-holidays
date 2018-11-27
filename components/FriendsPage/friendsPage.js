@@ -23,7 +23,7 @@ const printSingleFriend = (friend, holidays) => {
       <button class="btn btn-danger delete-btn" data-delete-id=${friend.id}>X</button>
       <button class="btn btn-info edit-btn" data-edit-id=${friend.id}>Edit</button>
       <div class="holiday-container">${holidayStringBuilder(holidays)}</div>
-    </div>
+      </div>
   `;
   $('#single-container').html(friendString);
 };
