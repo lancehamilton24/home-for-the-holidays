@@ -7,7 +7,7 @@ import holidaysData from '../../src/helpers/data/holidaysData';
 const holidayStringBuilder = (holidays) => {
   let holidayString = '<h3>Holidays:</h3>';
   holidays.forEach((holiday) => {
-    holidayString += `<h5>${holiday.name}</h5>`;
+    holidayString += `<h5>${holiday.name} ${holiday.Date}</h5>`;
   });
   return holidayString;
 };
@@ -32,17 +32,13 @@ const getSingleFriend = (e) => {
   // firebase id
   const friendId = e.target.dataset.dropdownId;
   const uid = authHelpers.getCurrentUid();
-  friendsData.getSingleFriend(friendId)
-    .then((singleFriend) => {
-      holidayFriendsData.getHolidayIdsForFriend(friendId).then((holidayIds) => {
-        holidaysData.getHolidaysByArrayofIds(uid, holidayIds).then((holidays) => {
-          printSingleFriend(singleFriend, holidays);
-        });
+  friendsData.getSingleFriend(friendId).then((singleFriend) => {
+    holidayFriendsData.getHolidayIdsForFriend(friendId).then((holidayIds) => {
+      holidaysData.getHolidaysByArrayOfIds(uid, holidayIds).then((holidays) => {
+        printSingleFriend(singleFriend, holidays);
       });
-      // const holidayIds = ['holiday1'];
-      const holidays = ['a', 'b', 'c'];
-      printSingleFriend(singleFriend, holidays);
-    })
+    });
+  })
     .catch((error) => {
       console.error('error in getting one friend', error);
     });
