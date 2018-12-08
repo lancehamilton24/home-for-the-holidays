@@ -73,7 +73,7 @@ const addNewFriend = () => {
 
 // Edit
 const showEditForm = (e) => {
-  const idToEdit = e.target.dataset.editId;
+  const idToEdit = e.target.dataset;
   friendsData.getSingleFriend(idToEdit)
     .then((singleFriend) => {
       let domString = '<h2>Edit Friend</h2>';

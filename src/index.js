@@ -1,14 +1,13 @@
 import firebase from 'firebase/app';
 import 'bootstrap';
 import $ from 'jquery';
-
 import apiKeys from '../db/apiKeys.json';
 
-import createNavbar from '../components/Navbar/navbar';
-import loginButton from '../components/Auth/auth';
+import createNavbar from './components/Navbar/navbar';
+import loginButton from './components/Auth/auth';
 import authHelpers from './helpers/authHelpers';
-import friendsPage from '../components/FriendsPage/friendsPage';
-import showAddForm from '../components/AddEditFriends/addEditFriends';
+import friendsPage from './components/FriendsPage/friendsPage';
+import showAddForm from './components/AddEditFriends/addEditFriends';
 
 import './index.scss';
 
