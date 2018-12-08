@@ -17,6 +17,8 @@ const printSingleFriend = (friend, holidays) => {
   const friendString = `
     <div>
       <h1>${friend.name}</h1>
+      <button class="btn btn-danger delete-btn" data-delete-id=${friend.id}>X</button>
+      <button class="btn btn-info edit-btn" data-edit-id=${friend.id}>Edit</button>
       <h3>${friend.relationship}</h3>
       <p>${friend.address}</p>
       <p>${friend.email}</p>
